@@ -45,6 +45,7 @@ for i in range(2,101):
     sharesheldlist.append(sharesheld.text)
 
 allinfo = list(zip(tickerlist,relationshiplist,datelist,costlist,shareslist,sharesheldlist))
+# zip combines the lists into a single list of tuples
 
 df = pd.DataFrame(allinfo, columns = ["Ticker", "Position", "Date", "Share Cost", "Shares Sold", "Shares Held"])
 
